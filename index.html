@@ -1,0 +1,212 @@
+<!-- OBS: PROGRAMA FUNCIONA CORRETAMENTE NO CHROME / FIREFOX -->
+<!-- Varios outros navegadores, não sei porque os botões não vão -->
+
+<!DOCTYPE html>
+<html lang= "pt-br">
+
+  <!---------------- CONFIGURAÇÕES DO SITE ---------------->
+  <head>
+    <title> FoodCamp </title>
+    <meta charset= "UTF-8"/>
+    <meta name= "viewport" content= "width=device-width, initial-scale=1"/>
+    <link rel= "stylesheet" type= "text/css" href= "reset.css"/>
+    <link rel= "stylesheet" type= "text/css" href= "style.css"/>
+    <link rel= "sortcut icon" type= "image/png" href= "multim/favicon.png"/>
+    <link href= "https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel= "stylesheet"/>
+    <link href= "https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel= "stylesheet"/>
+  </head>
+
+  <!-- CORPO SITE -->
+  <body>
+    <div id= "interface"> <!-- Interace Site, sem as caixas Verdes (inputs/confirmação) -->
+
+      <!---------------- CABECALHO DO SITE ---------------->
+      <header>
+        <hgroup>
+          <h1> FoodCamp </h1>
+          <h2> Sua comida em 6 minutos </h2>
+        </hgroup>
+      </header>
+
+      <!---------------- CATALOGO ---------------->
+      <main>
+        <!---------------- SEÇÃO DE PRATOS ---------------->
+        <section>
+          <h1> Primeiro, seu prato </h1>
+          <div class= "produtos">
+
+            <!-- Frango Xadrez -->
+            <article class= "comidas" onclick= "escolha(0,0)"> 
+              <img src= "multim/comidas/comida01.jpg" alt= "frango xadrez"/>
+              <h2> Frango Xadrez </h2>
+              <p class= "espacoPalavra"> Pouco de verdura, um pouco de arroz </p>
+              <h3> R$ <span> 19,90 </span> </h3>
+              <ion-icon name= "checkmark-circle"> </ion-icon>            
+            </article>
+
+            <!-- Feijoada -->
+            <article class= "comidas" onclick= "escolha(1,0)">
+              <img src= "multim/comidas/comida02.jpg" alt= "feijoada"/>
+              <h2> Feijoada </h2>
+              <p> Acompanha laranja, arroz e farinha </p>
+              <h3> R$ <span> 22,90 </span> </h3>
+              <ion-icon name= "checkmark-circle"> </ion-icon>           
+            </article>
+
+            <!-- Peixe Grelhado -->
+            <article class= "comidas" onclick= "escolha(2,0)">
+              <img src= "multim/comidas/comida03.jpg" alt= "peixe grelhado"/>
+              <h2> Peixe Grelhado </h2>
+              <p> Acompanha mandioca frita e salada </p>
+              <h3> R$ <span> 25,90 </span> </h3>
+              <ion-icon name= "checkmark-circle"> </ion-icon>           
+            </article>
+            
+            <!-- Picanha Argentina -->
+            <article class= "comidas" onclick= "escolha(3,0)">
+              <img src= "multim/comidas/comida04.jpg" alt= "picanha argentina"/>
+              <h2 class= "espacoLetra"> Picanha Argentina </h2>
+              <p> Farofa com bacon e batata frita </p>
+              <h3> R$ <span> 29,90 </span> </h3>
+              <ion-icon name= "checkmark-circle"> </ion-icon>         
+            </article>
+
+            <div class= "espaco"> </div> <!-- Div para que haja o margin-right do ultimo article-->
+          </div>
+        </section>
+
+        <!---------------- SEÇÃO DE BEBIDAS ---------------->
+        <section>
+          <!-- Coca-Cola KS  -->
+          <h1> Agora, sua bebida </h1>
+          <div class= "produtos">
+            <article class= "bebidas" onclick= "escolha(0,1)"> 
+              <img src= "multim/bebidas/bebida01.jpg" alt= "Coca-Cola KS"/>
+              <h2> Coca-Cola KS </h2>
+              <p> Bem gelada, 290ml </p>
+              <h3> R$ <span> 4,90 </span> </h3>
+              <ion-icon name= "checkmark-circle"> </ion-icon> 
+            </article>
+
+            <!-- Suco de laranja  -->
+            <article class= "bebidas" onclick= "escolha(1,1)"> 
+              <img src= "multim/bebidas/bebida02.jpeg" alt= "Suco de Laranja"/>
+              <h2 class= "espacoLetra_2" > Suco de Laranja </h2>
+              <p> Da fruta, 1 litro </p>
+              <h3> R$ <span> 10,90 </span> </h3>
+              <ion-icon name= "checkmark-circle"> </ion-icon> 
+            </article>
+          
+            <!-- Matte Leão  -->
+            <article class= "bebidas" onclick= "escolha(2,1)"> 
+              <img src= "multim/bebidas/bebida03.jpeg" alt= "Matte Leão"/>
+              <h2> Matte Leão </h2>
+              <p> Chá de limão, 400ml </p>
+              <h3> R$ <span> 5,90 </span> </h3>
+              <ion-icon name= "checkmark-circle"> </ion-icon> 
+            </article>
+
+            <!-- Água Mineral -->
+            <article class= "bebidas" onclick= "escolha(3,1)"> 
+              <img src= "multim/bebidas/bebida04.jpg" alt= "Água Mineral"/>
+              <h2> Água Mineral </h2>
+              <p> Prata sem gás, 300ml </p>
+              <h3> R$ <span> 2,90 </span> </h3>
+              <ion-icon name= "checkmark-circle"> </ion-icon> 
+            </article>
+
+            <div class= "espaco"> </div> <!-- Div para que haja o margin-right do ultimo article-->
+          </div>
+        </section>
+
+        <!---------------- SEÇÃO DE SOBREMESAS ---------------->
+        <section>
+          <h1> Por fim, sua sobremesa </h1>
+
+          <!-- Pudim -->
+          <div class= "produtos">
+            <article class= "sobremesas" onclick= "escolha(0,2)">
+              <img src= "multim/sobremesas/sobremesa01.jpg" alt= "Pudim"/>
+              <h2> Pudim </h2>
+              <p> Sabor doce de leite </p>
+              <h3> R$ <span> 7,90 </span> </h3>
+              <ion-icon name= "checkmark-circle"> </ion-icon>           
+            </article>
+
+            <!-- Sorvete -->
+            <article class= "sobremesas" onclick= "escolha(1,2)"> 
+              <img src= "multim/sobremesas/sobremesa02.jpg" alt= "Sorvete"/>
+              <h2> Sorvete </h2>
+              <p> Bola de morango </p>
+              <h3> R$ <span> 6,90 </span> </h3>
+              <ion-icon name= "checkmark-circle"> </ion-icon>            
+            </article>
+
+            <!-- Brigadeiro -->
+            <article class= "sobremesas" onclick= "escolha(2,2)">
+              <img src= "multim/sobremesas/sobremesa03.jpg" alt= "Brigadeiro"/>
+              <h2> Brigadeiro </h2>
+              <p> 6 unid de brigadeiro </p>
+              <h3> R$ <span> 13,90 </span> </h3>
+              <ion-icon name= "checkmark-circle"> </ion-icon>            
+            </article>
+
+            <!-- Açai c/ granola -->
+            <article class= "sobremesas" onclick= "escolha(3,2)">
+              <img src= "multim/sobremesas/sobremesa04.jpg" alt= "Açai"/>
+              <h2> Açai c/ granola </h2>
+              <p> Açai na tigela, 300ml </p>
+              <h3> R$ <span> 9,90 </span> </h3>
+              <ion-icon name= "checkmark-circle"> </ion-icon>           
+            </article>
+
+            <div class= "espaco"> </div> <!-- Div para que haja o margin-right do ultimo article-->
+          </div>  
+        </section>
+      </main>
+
+      <!---------------- RODAPÉ DO SITE ---------------->
+      <footer>
+        <button id="botao" onclick= "dados()"> Selecione os 3 itens<br/> para fechar o pedido </button>
+      </footer>
+    </div>
+  
+    <!---------------- CONFIRMAÇÃO DO PEDIDO ---------------->
+    <div class= "confirmar">
+      <h1> Confirme seu pedido: </h1>
+
+      <div> <h3 id= "nome0"> </h3> <span id= "preco0"> </span> </div>
+      <div> <h3 id= "nome1"> </h3> <span id= "preco1"> </span> </div>
+      <div> <h3 id= "nome2"> </h3> <span id= "preco2"> </span> </div>
+      <div> <h1 id= "nomeTotal"> TOTAL </h1> <span id= "total"> </span> </div>
+
+      <button class= "certo" onclick= "pedir(true)"> Tudo certo, pode pedir! </button>
+      <button class= "cancelar" onclick= "clickCancelar()"> Cancelar </button>
+      <ion-icon onclick= "voltarTela()" id= "iconeVoltar" name="arrow-back-circle-outline"> </ion-icon>
+    </div>
+
+    <!---------------- ENTRADA DE DADOS USUÁRIO ---------------->
+    <div id= "entradaDados" class= "confirmar">
+      <h1> Digite seus dados: </h1>
+
+      <div> <h3> Seu nome: </h3> </div>
+      <form>
+        <input onblur= "iconeAparece(0)" class= "caixaTexto" id= "nome" type= "text" maxlength= "50" placeholder= "Nome completo" autocomplete= "off" > </input>
+        <ion-icon class= "iconeFormulario" name="checkmark-circle"></ion-icon>
+      </form>
+
+      <div> <h3> Seu endereço: </h3> </div>
+      <form>
+        <input onblur= "iconeAparece(1)" class= "caixaTexto" id = "endereco"  type= "text" maxlength= "50" placeholder= "Setor, Rua, Número ..." autocomplete= "off"> </input>
+        <ion-icon class= "iconeFormulario" name="checkmark-circle"></ion-icon> 
+      </form>
+
+      <button type= "submit" class= "certo" onclick= "pedir(false)"> Continuar </button>
+      <button class= "cancelar" onclick= "clickCancelar()"> Cancelar </button>
+    </div>    
+
+  <!-- JAVASCRIPT -->
+  <script src= "script.js" type="text/javascript"> </script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  </body>
+</html>

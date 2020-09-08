@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+/* ------------ ESTILOS GLOBAIS ------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: regular;
+  padding: 70px 0px;
+  margin: 0;
+}
+
+article:hover, button:hover {
+  cursor: pointer;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+p {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+article, button, ion-icon {
+  transition: all 0.2s ease-in-out;
+}
+
+ion-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #32B72F;
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+button {
+  display: flex;
+  border: none;
+  background-color: #CBCBCB;
+  height: 50px;
+  color: #FFFFFF;
+  width: calc(100% - 40px);
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 50px;
+  line-height: 20px;
+  padding: 0px;
+}
+
+button:focus , input:focus {
+  outline: none;
+}
+
+/* FIM */
+
+/* ----------- ESTILIZAR CABECALHO  ------------ */
+
+header {
+  background-color: #CF2B2B;
+  width: 100%;
+  height: 70px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  position: fixed;
+  top: 0px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+header h2 {
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+header h1 {
+  font-size: 34px;
+  margin-bottom: 3px;
+  letter-spacing: 1.6px;
+}
+
+/* FIM */
+
+/* ----------- ESTILIZAR  CATALOGO   ------------ */
+
+main {
+  background-color: #EEEEEE;
+  color: #333333;
+  width: 100%;
+  padding: 30px 0px 5px 15px;
+}
+
+main img {
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  filter: brightness(90%);
+}
+
+main h1 {
+  padding-left: 5px;
+  font-size: 22px;
+  font-family: 'Righteous', cursive;
+}
+
+/* FIM */
+
+/* ----------- ESTILIZAR SEÇÃO DE PRODUTOS E PRODUTOS   ------------ */
+
+section {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section .produtos {
+  display: flex;
+  width: 100%;
+  overflow: scroll;
+  padding: 5px;
+  scrollbar-width: none;
+}
+
+article {
+  width: 143px;
+  height: 180px;
+  background: #ffffff;
+  margin-right: 15px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  font-size: 14px;
+}
+
+.espaco {
+  height: 100%;
+  width: 5px;
+  flex-shrink: 0;
+  background: #EEEEEE;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*------ Ajustes Texto ------*/
+
+.espacoPalavra{
+  word-spacing: 1px;
+}
+
+.espacoLetra {
+  letter-spacing: -1.15px;
+}
+
+
+/* Fim */
+
+/* ----------- ESTILIZAR RODAPE   ------------ */
+
+footer {
+  height: 70px;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #CBCBCB;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+/* FIM */
+
+/* ----------- ESTILIZAR CAIXA DE ENTRADA DE DADOS E CONFIRMAÇÃO   ------------ */
+
+.confirmar {
+  position: fixed;
+  top: calc(100vh/2 - 162.5px);
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 325px;
+  background-color: #39d477;
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 20px;
+  display: none;
+  font-size: 18px;
+}
+
+.confirmar div {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirmar h1, #total {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.confirmar button {
+  font-weight: 700;
+  width: 100%;
+}
+
+.confirmar h3, .confirmar span, #nomeTotal {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.confirmar .certo {
+  background-color: #ffffff;
+  color: #39d477;
+  border: 3px solid lightgreen;
+}
+
+.confirmar .cancelar {
+  position: relative;
+  background-color: #39d477;
+  height: auto;
+  padding: 10px;
+  width: auto;
+}
+
+::placeholder {
+  opacity: 0.3;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.caixaTexto {
+  border: 3px solid lightgreen;
+  height: 35px;
+  flex-grow: 1;
+  padding-top: 3px;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+.iconeFormulario {
+  right: 10px;
+  bottom: 8px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+#iconeVoltar {
+  bottom: 26.5px;
+  right: 40px;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  display: block;
+  z-index: 9;
+  cursor: pointer;
+  border: white;
+}
+
+/* FIM */
