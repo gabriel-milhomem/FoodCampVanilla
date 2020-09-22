@@ -25,20 +25,20 @@ O site permite de forma fácil a escolha do seu combo, enviando em seguida o ped
     - [ ]  Para fazer os produtos rolarem para o lado, utilize o overflow hidden, não é necessário que a rolagem funcione no desktop
 
 - Seleção de itens
-    - [x]  Ao clicar sobre um item, o mesmo deve ser marcado como selecionado, seguindo layout da tela 2
-    - [x]  Ao clicar em um item, caso já exista um item selecionado na mesma categoria, este deve ser desrmarcado e o novo item clicado deve ser o novo selecionado
-    - [x]  Ao clicar em um item já marcado, **não** é necessário desmarcá-lo
+    - [ ]  Ao clicar sobre um item, o mesmo deve ser marcado como selecionado, seguindo layout da tela 2
+    - [ ]  Ao clicar em um item, caso já exista um item selecionado na mesma categoria, este deve ser desrmarcado e o novo item clicado deve ser o novo selecionado
+    - [ ]  Ao clicar em um item já marcado, **não** é necessário desmarcá-lo
 - Botão de finalizar pedido
-    - [x]  Por padrão, o botão de finalizar pedido deve vir desabilitado. Ao clicar no botão nesse estado, nada deve acontecer.
-    - [x]  Quando o usuário tiver selecionado os itens das 3 categorias, o botão deve mudar para o estado de habilitado, seguindo layout da tela 3
+    - [ ]  Por padrão, o botão de finalizar pedido deve vir desabilitado. Ao clicar no botão nesse estado, nada deve acontecer.
+    - [ ]  Quando o usuário tiver selecionado os itens das 3 categorias, o botão deve mudar para o estado de habilitado, seguindo layout da tela 3
 - Envio do pedido
-    - [x]  Ao finalizar o pedido, o usuário deverá ser encaminhado para o WhatsApp Web, em conversa com o contato do restaurante, já com uma mensagem padrão preenchida
+    - [ ]  Ao finalizar o pedido, o usuário deverá ser encaminhado para o WhatsApp Web, em conversa com o contato do restaurante, já com uma mensagem padrão preenchida
 
         **Dica**: Para criar um link que envia uma mensagem via WhatsApp, veja essa página de ajuda do WhatsApp: [https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat?lang=kk](https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat?lang=kk)
 
         **Dica 2**: Para preparar a mensagem para o formato que o WhatsApp espera, pesquise por uma função chamada `encodeURIComponent(minhaString)`
 
-    - [x]  Essa mensagem deverá seguir este formato:
+    - [ ]  Essa mensagem deverá seguir este formato:
 
         ```css
         Olá, gostaria de fazer o pedido:
