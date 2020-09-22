@@ -69,5 +69,3 @@ O site permite de forma fácil a escolha do seu combo, enviando em seguida o ped
 
 - Bônus 2: Confirme os dados antes de finalizar o pedido
     - Ao clicar em "Finalizar pedido", em vez de ir para o WhatsApp direto, primeiro revise a compra seguindo esse layout: (OBS: no lugar de vírgula, pode usar ponto como separador decimal nos preços)
-
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f39d253c-6b69-49d4-b2ca-2c0d431005a0/iPhone_11_Pro_Max_-_4.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f39d253c-6b69-49d4-b2ca-2c0d431005a0/iPhone_11_Pro_Max_-_4.png)
